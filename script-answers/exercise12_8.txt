@@ -1,0 +1,105 @@
+Script started on 2025-03-21 11:58:30+02:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="131" LINES="40"]
+[?2004h[38;5;41mkasper-linux[38;5;40m@[38;5;45mFSO-part12-containers-applications[38;5;219m<[38;5;183mmain[38;5;219m>[0m curl http://localhost:3000/todos/67dd2a685f8f1957bd6b140c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnano ~/.bashrc[Kcd Full-Stack-Openls[Kcd Full-Stack-Open[4Pnano ~/.bashrccurl http://localhost:3000/todos/67dd2a685f8f1957bd6b140c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kcurl http://localhost:3000/todos/67dd2a685f8f1957bd6b140c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnano ~/.bashrc[Kcd Full-Stack-Openls[KPROMPT_COMMAND='PS1_CMD1=$(git branch --show-current 2>/dev/null)'; PS1='\[\e[38;5;41m\]\h\[\e[38;5;40m\]@\[\e[38;5;45m\]\W\[\e[38;5;219m\]<\[\e[38;5;183m\]${PS1_CMD1}\[\e[38;5;219m\]>\[\e[0m\] '[A[C[C[C[C[C[C[C[C[C[Ch\[\[15P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[\e[[15@38;5;41m\]\h\[\[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd Full-Stack-Open[4Pnano ~/.bashrccurl http://localhost:3000/todos/67dd2a685f8f1957bd6b140c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kdocker exec -it [K[K[K[K[K[K[K[K[Kcontainer ls
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS              PORTS                                         NAMES
+487a509b94b7   mongo     "docker-entrypoint.s…"   59 minutes ago   Up About a minute   0.0.0.0:3456->27017/tcp, :::3456->27017/tcp   todo-backend_mongo_1
+[?2004h[38;5;41mkasper-linux[38;5;40m@[38;5;45mFSO-part12-containers-applications[38;5;219m<[38;5;183mmain[38;5;219m>[0m docker container ls[K[K[K[K[K[K[K[K[K[K[K[Kexec -it todo-backend_mongo_1 bash
+[?2004l[?2004hroot@487a509b94b7:/# mongosh
+[?2004l]0;mongosh mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	67dd38999241e80ee96b140a
+Connecting to:		[1m[32mmongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.4.2[0m
+Using MongoDB:		8.0.5
+[1m[33mUsing Mongosh[0m:		2.4.2
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+
+To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the disableTelemetry() command.
+
+[1G[0J [1G[?2004h[1G[0Jtest> [7Gshow dbs
+Uncaught [1m[31mMongoServerError[0m[1m[31m[Unauthorized][0m: Command listDatabases requires authentication
+[1G[0Jtest> [7G
+(To exit, press Ctrl+C again or Ctrl+D or type .exit)
+[1G[0Jtest> [7G
+[?2004l[?2004hroot@487a509b94b7:/# mongosh -u root -p example
+[?2004l]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	67dd38eaccd8a5da0d6b140a
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.4.2[0m
+Using MongoDB:		8.0.5
+[1m[33mUsing Mongosh[0m:		2.4.2
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+[1G[0J [1G[?2004h[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2025-03-21T09:57:25.992+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2025-03-21T09:57:26.207+00:00: For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile
+   2025-03-21T09:57:26.207+00:00: For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile
+   2025-03-21T09:57:26.207+00:00: We suggest setting the contents of sysfsFile to 0.
+   2025-03-21T09:57:26.207+00:00: vm.max_map_count is too low
+[1m[33m------[0m
+
+[1G[0Jtest> [7G[1G[0Jtest> show dbs[15G
+[1madmin[0m         100.00 KiB
+[1mconfig[0m        108.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   56.00 KiB
+[1G[0Jtest> [7Guse the [1G[0Jtest> use the[14G_database
+switched to db the_database
+[1G[0Jthe_database> [15Gshow collections
+[1mtodos[0m
+[1G[0Jthe_database> [15Gdb.todosfind[1G[0Jthe_database> db.todosfin[26G[1G[0Jthe_database> db.todosfi[25G[1G[0Jthe_database> db.todosf[24G[1G[0Jthe_database> db.todos[23G.find({})
+[
+  {
+    _id: ObjectId([32m'67dd2a685f8f1957bd6b140b'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'67dd2a685f8f1957bd6b140c'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mtrue[39m
+  }
+]
+[1G[0Jthe_database> [15Gdb.to
+db.toLocaleString  db.toString        db.todos
+
+[1G[0Jthe_database> db.to[20Gdos.insertOne({[32m"[39m[32mt[39m[32me[39m[32mx[39m[32mt[39m[32m"[39m: [32m"[39m[32mt[39m[32me[39m[32ms[39m[32mt[39m [32mi[39m[32mn[39m[32ms[39m[32me[39m[32mr[39m[32mt[39m[32m"[39m, [32m"[39m[32md[39m[32mo[39m[32mn[39m[32me[39m[32m"[39m: fals[33mfalse[39m[32m"[39m[32m}[39m[32m)[39m
+Uncaught:
+[1m[31mSyntaxError[0m: Unterminated string constant. (1:56)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m db[33m.[39mtodos[33m.[39minsertOne({[32m"text"[39m[33m:[39m [32m"test insert"[39m[33m,[39m [32m"done"[39m[33m:[39m [36mfalse[39m[32m"})[39m
+ [90m   |[39m                                                         [31m[1m^[22m[39m
+ [90m 2 |[39m[0m
+
+[1G[0Jthe_database> [15G[1G[0Jthe_database> db.todos.insertOne({[32m"text"[39m: [32m"test insert"[39m, [32m"done"[39m: [33mfalse[39m[32m"})[39m[74G[1D[1G[0Jthe_database> db.todos.insertOne({[32m"text"[39m: [32m"test insert"[39m, [32m"done"[39m: [33mfalse[39m[32m"})[39m[73G[1D[1G[0Jthe_database> db.todos.insertOne({[32m"text"[39m: [32m"test insert"[39m, [32m"done"[39m: [33mfalse[39m[32m"})[39m[72G[1G[0Jthe_database> db.todos.insertOne([44m{[49m[32m"text"[39m: [32m"test insert"[39m, [32m"done"[39m: [33mfalse[39m})[71G[1C[1G[0Jthe_database> db.todos.insertOne[44m([49m{[32m"text"[39m: [32m"test insert"[39m, [32m"done"[39m: [33mfalse[39m})[72G[1C[1G[0Jthe_database> db.todos.insertOne({[32m"text"[39m: [32m"test insert"[39m, [32m"done"[39m: [33mfalse[39m})[73G
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId([32m'67dd3984ccd8a5da0d6b140b'[39m)
+}
+[1G[0Jthe_database> [15G[1G[0Jthe_database> db.todos.insertOne({[32m"text"[39m: [32m"test insert"[39m, [32m"done"[39m: [33mfalse[39m})[73G[1G[0Jthe_database> db.todos.insertOne({[32m"text"[39m: [32m"test insert"[39m, [32m"done"[39m: [33mfalse[39m[32m"})[39m[74G[1G[0Jthe_database> db.todos.find({})[32G
+[
+  {
+    _id: ObjectId([32m'67dd2a685f8f1957bd6b140b'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'67dd2a685f8f1957bd6b140c'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'67dd3984ccd8a5da0d6b140b'[39m),
+    text: [32m'test insert'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15G
+(To exit, press Ctrl+C again or Ctrl+D or type .exit)
+[1G[0Jthe_database> [15G
+[?2004l[?2004hroot@487a509b94b7:/# exit
+[?2004lexit
+[?2004h[38;5;41mkasper-linux[38;5;40m@[38;5;45mFSO-part12-containers-applications[38;5;219m<[38;5;183mmain[38;5;219m>[0m exit
+[?2004lexit
+
+Script done on 2025-03-21 12:05:08+02:00 [COMMAND_EXIT_CODE="0"]
