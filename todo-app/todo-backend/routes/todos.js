@@ -18,12 +18,19 @@ router.post("/", async (req, res) => {
     text: req.body.text,
     done: false,
   });
+
   const todoString = await redis.getAsync("added_todos");
   let todoInt = parseInt(todoString);
-  const newTodoInt = todoInt + 1;
-  //console.log("got ", todoInt);
-  //console.log("now ", newTodoInt);
-  await redis.setAsync("added_todos", newTodoInt);
+
+  // check if int
+  let setTodoInt = 1;
+  if (Number.isInteger(todoInt)) {
+    setTodoInt = todoInt + 1;
+  }
+
+  console.log("got ", todoInt);
+  console.log("now ", setTodoInt);
+  await redis.setAsync("added_todos", setTodoInt);
 
   res.send(todo);
 });

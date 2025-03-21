@@ -17,11 +17,17 @@ router.get("/", async (req, res) => {
 });
 
 router.get("/statistics", async (req, res) => {
-  const amount = await redis.getAsync("added_todos");
-  const amountInt = parseInt(amount);
-  res.json({
-    added_todos: amountInt,
-  });
+  const todoString = await redis.getAsync("added_todos");
+  const todoInt = parseInt(todoString);
+  if (Number.isInteger(todoInt)) {
+    res.json({
+      added_todos: todoInt,
+    });
+  } else {
+    res.json({
+      added_todos: 0,
+    });
+  }
 });
 
 module.exports = router;
