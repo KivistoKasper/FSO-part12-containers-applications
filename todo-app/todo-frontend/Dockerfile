@@ -12,11 +12,13 @@ FROM node:20 AS build
 
 WORKDIR /usr/src/app
 
-COPY . .
+COPY package*.json ./
 
 RUN npm ci
 
-ENV VITE_BACKEND_URL=http://localhost:3000/
+COPY . .
+
+ENV VITE_BACKEND_URL=http://localhost:8080/api
 
 RUN npm run build
 
